@@ -14,16 +14,34 @@ for (var i=0; i < nombres.length; i++){
 }  */
  
 //EJERCICIO 2
-/* */
+/* Revertir cadena: Escribe una función que ponga en reversa una cadena usando los métodos del array. 
+Recomendación: push, reverse, join, split (método de strings).
+
+let string= ["j","o","i","n","t","h","e","a","r","m","y"];
+let reversa= string.reverse();
+document.write(reversa);*/
+
 
 //EJERCICIO 3
-/* */
+/* Ordenar palabra: Escribe una función que tome una palabra, y devuelva una nueva con sus letras 
+ordenadas alfabéticamente. Debes usar los métodos de arrays.
+
+function reversa (texto) {
+   texto=prompt('ingresa una palabra')
+   return text.sort
+}
+reversa()
+document.write(reversa.length)*/ //////////////////////////////////////////////////
 
 //EJERCICIO 4
-/* */
+/*Números pares: Dado un array con números del 1  al 50, utiliza 
+el método filter para obtener los números pares. 
+Recuerda que no tienes que escribir tú mismo los 50 números… */
+
+
 
 //EJERCICIO 5
-/* */
+/*Crear cadena: Dado un array con nombres, crear una única cadena separando los nombres con “.” */
 
 //EJERCICIO 6
 /* Números pares entre 0 y un máximo: Escribe una función que reciba dos parámetros numéricos y
@@ -118,3 +136,35 @@ Sumar(x);
 alert(x);
 
 */
+
+
+//EJERCICIO 1_ OBLIGATORIOS OBJETOS
+/*Película Favorita I: Crear un objeto con tu película 
+favorita que tenga las propiedades: nombre de la película; año; director/a; actores
+ principales (al menos 2); duración y género; Imprime los datos de la peli  en el html accediendo. */
+
+ let Pelis = [
+    {Nombre:"El secreto de sus ojos", año: 2007, director: "Juan José Campanella", actuan: "Soledad Villamil, Ricardo Darín ", duración: "120 min", genero: "Policial, drama. "},
+    {Nombre: "El ultimo samurai", año: 2003,director: "Edward Zwick", actuan: "Tom cruise", duración: "120 min", genero: "Bélico,histórico "},
+    {Nombre: "Tierra de osos", año: 2000, director: "Robert Walker", actuan: "Koda, Kenai, La viejita. ", duración: "120 min", genero: "Animación, aventura, drama "},
+    {Nombre: "The babadook", año: 2012, director: "Jennifer Kent", actuan: "Noah wisemann, Essie Davies", duración: "120 min", genero: "Terror. "}
+]
+
+for(let i= 0; i<Pelis.length; i++) {
+    var peli = Pelis[i];
+    document.write ("Nombre: " + "<b>" + peli.Nombre + "</b>" + ", año: "
+    + peli.año + ", Directed by: " + peli.director + "actúan: "+ peli.actuan + "Duración: " + peli.duración + "Género: " +peli.genero+ "<br>")
+}
+
+
+/*let losSimuladores = [
+    {Nombre:"Santos", edad: 34, funcion: "planificación" },
+    {Nombre: "Ravena", edad: 32,funcion: "caracterización"},
+    {Nombre: "Medina", edad: 40, funcion: "investigación"},
+    {Nombre: "Lamponne", edad: 36, funcion: "movilidad"},
+]
+
+for(let i= 0; i<losSimuladores.length; i++) {
+    var simulador = losSimuladores[i];
+    document.write ("Nombre: " + "<b>" + simulador.Nombre + "</b>" + ", edad: "+ simulador.edad + ", función: " + simulador.funcion + "<br>")
+} */
