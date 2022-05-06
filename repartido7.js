@@ -141,7 +141,7 @@ alert(x);
 //EJERCICIO 1_ OBLIGATORIOS OBJETOS
 /*Película Favorita I: Crear un objeto con tu película 
 favorita que tenga las propiedades: nombre de la película; año; director/a; actores
- principales (al menos 2); duración y género; Imprime los datos de la peli  en el html accediendo. */
+ principales (al menos 2); duración y género; Imprime los datos de la peli  en el html accediendo. 
 
  let Pelis = [
     {Nombre:"El secreto de sus ojos", año: 2007, director: "Juan José Campanella", actuan: "Soledad Villamil, Ricardo Darín ", duración: "120 min", genero: "Policial, drama. "},
@@ -154,9 +154,142 @@ for(let i= 0; i<Pelis.length; i++) {
     var peli = Pelis[i];
     document.write ("Nombre: " + "<b>" + peli.Nombre + "</b>" + ", año: "
     + peli.año + ", Directed by: " + peli.director + "actúan: "+ peli.actuan + "Duración: " + peli.duración + "Género: " +peli.genero+ "<br>")
+}*/
+
+//EJERCICIO 2
+/*Película Favorita II: Al  objeto de la actividad anterior agrega las propiedades País de origen; 
+idioma de origen y la condición si es apta para todo público (ATP). Además agrega una 
+función que muestre los datos del objeto. Llama a esa función. Por último elimina la propiedad sobre el género usando delete. 
+
+class Pelis {
+    constructor(nombre, año, director, actuan, duración, genero, pais, atp){
+        this.nombre=nombre;
+        this.año= año;
+        this.director= director;
+        this.actuan= actuan;
+        this.duración= duración;
+        this.genero= genero;
+        this.pais= pais;
+        this.atp= atp;          
+    }
+    mostrarPelis(){
+        document.write(this.nombre+ "<br>" + this.año+ "<br>" + this.director+ "<br>" + this.actuan+ "<br>" +this.duración+ "<br>" +this.genero+ "<br>" +this.pais+ "<br>" +this.atp+ "<br>");
+    } 
+} 
+
+
+
+var Peli1 = new Pelis ("el secreto de sus ojos","2007","Campanella","Soledad Villamil, Darín", "120min", "policial", "argentina", "ATP");
+var Peli2 = new Pelis ("el secreto de sus ojos","2007","Campanella","Soledad Villamil, Darín", "120min", "policial", "argentina", "ATP");
+var Peli3 = new Pelis ("el secreto de sus ojos","2007","Campanella","Soledad Villamil, Darín", "120min", "policial", "argentina", "ATP");
+var Peli4 = new Pelis ("el secreto de sus ojos","2007","Campanella","Soledad Villamil, Darín", "120min", "policial", "argentina", "ATP");
+
+Peli1.mostrarPelis()
+Peli2.mostrarPelis()
+Peli3.mostrarPelis()
+Peli4.mostrarPelis()*/
+
+
+//EJERCICIO 3
+/*Calculadora científica: Realiza una calculadora que permita calcular, además de las operaciones básicas, 
+la raíz cuadrada de un número, el logaritmo en base 10 de ese número y la potencia de un número dado su exponente. (usar el objeto Math()). 
+
+    
+        function sumar(){
+            var x=parseInt (document.getElementById('valor1').value);
+            var y=parseInt (document.getElementById('valor2').value);
+            document.getElementById('resultado').innerHTML=(x+y);   
+        }
+        function restar(){
+            var x=parseInt (document.getElementById('valor1').value);
+            var y=parseInt (document.getElementById('valor2').value);
+            document.getElementById('resultado').innerHTML=(x-y);   
+        }
+        function multiplicar(){
+            var x=parseInt (document.getElementById('valor1').value);
+            var y=parseInt (document.getElementById('valor2').value);
+            document.getElementById('resultado').innerHTML=(x*y);   
+        }
+        function dividir(){
+            var x=parseInt (document.getElementById('valor1').value);
+            var y=parseInt (document.getElementById('valor2').value);
+            document.getElementById('resultado').innerHTML=(x/y);   
+        }
+
+        function raiz() {
+            var x=parseInt (document.getElementById('valor1').value);
+            document.getElementById('resultado').innerHTML=(Math.sqrt(x))
+        }
+
+        function log(){
+            var x=parseInt (document.getElementById('valor1').value);
+            document.getElementById('resultado').innerHTML=(Math.log10(x));   
+        }
+
+        function potencia(){
+            var x=parseInt (document.getElementById('valor1').value);
+            var y=parseInt (document.getElementById('valor2').value);
+            document.getElementById('resultado').innerHTML=(Math.pow(x,y));   
+        }*/
+
+
+
+//EJERCICIO 4 
+/*En qué mes estamos?: A través de un prompt ingresar el número de un mes e imprimir el nombre del mes correspondiente (deberás usar arrays.) 
+
+let mes=parseInt(prompt ("ingresa un número"));
+var arrayMes = ["Enero", "Febrero","Marzo","Abril","Mayo ", "Junio", "julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+switch (mes) {
+    case 1: document.write(arrayMes[0]);
+    break;
+    case 2: document.write(arrayMes[1]);
+    break;
+    case 3: document.write(arrayMes[2]);
+    break;
+    case 4: document.write(arrayMes[3]);
+    break;
+    case 5: document.write(arrayMes[4]);
+    break;
+    case 6: document.write(arrayMes[5]);
+    break;
+    case 7: document.write(arrayMes[6]);
+    break;
+    case 8: document.write(arrayMes[7]);
+    break;
+    case 9: ddocument.write(arrayMes[8]);
+    break;
+    case 10: document.write(arrayMes[9]);
+    break;
+    case 11: document.write(arrayMes[10]);
+    break;
+    case 12: document.write(arrayMes[11]);
+    break;
+    default: document.write("meh")
 }
+*/
+//EJERCICIO 5
+/*Estudiantes de Matea: Crear un array de objetos que contenga al menos 5 estudiantes del grupo. Cada estudiante debe poseer 
+las propiedades de: nombre; edad; género musical; mascotas;  
+y un objeto “gustos” que contenga al menos dos propiedades (el objeto gustos debe estar dentro del objeto principal). Se deberá imprimir los datos de cada alumno. */
+
+//EJERCICIO 6
+/* */
+
+//EJERCICIO 7
+/* */
+
+//EJERCICIO 8
+/* */
+
+//EJERCICIO 9
+/* */
+
+//EJERCICIO 10
+/* */
 
 
+
+/**************************************************************************************************************/
 /*let losSimuladores = [
     {Nombre:"Santos", edad: 34, funcion: "planificación" },
     {Nombre: "Ravena", edad: 32,funcion: "caracterización"},

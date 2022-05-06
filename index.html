@@ -7,7 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <section>
+        <h1>CALCULADORA CIENTÍFICA</h1>
+        <p>Debes ingresar los dos números a operar y también debe ingresar el tipo de operación <br>
+            El programa debe realizar la operación indicada con los dos números ingresados. <br>
+            En el caso de que ingrese una operación que no es ninguna de las operaciones ofrecidas <br>
+             se muestra el mensaje “Esa operación no  se puede realizar, ingrese nuevamente los datos”. <br> 
+            Para logaritmos solo se utiliza el primer número. <br>
+            Para potencias, el primer número es la base y el segundo, el exponente</p>
+        <form id="calculadora" method="post" ></form>
+        <input type="number" id="valor1" placeholder="escribe un número">
+        <button onclick="limpiar()"> Limpiar</button>
+        <br><br>
+        <input type="number" id="valor2" placeholder="escribe otro número">
+        <br><br>
+        <button type="button" onclick="sumar()">+</button>
+        <button type="button" onclick="restar()">-</button>
+        <button type="button" onclick="multiplicar()">*</button>
+        <button type="button" onclick="dividir()">/</button>
+        <button type="button" onclick="raiz()">√</button>
+        <button type="button" onclick="log()">log</button>
+        <button type="button" onclick="potencia()">^</button>
+        <p>El resultado es <span id="resultado"></span></p>
+
+    </section>
 
     <script src="repartido7.js"></script>
 </body>
