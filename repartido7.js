@@ -270,34 +270,27 @@ switch (mes) {
 //EJERCICIO 5
 /*Estudiantes de Matea: Crear un array de objetos que contenga al menos 5 estudiantes del grupo. Cada estudiante debe poseer 
 las propiedades de: nombre; edad; género musical; mascotas;  
-y un objeto “gustos” que contenga al menos dos propiedades (el objeto gustos debe estar dentro del objeto principal). Se deberá imprimir los datos de cada alumno. */
-
-//EJERCICIO 6
-/* */
-
-//EJERCICIO 7
-/* */
-
-//EJERCICIO 8
-/* */
-
-//EJERCICIO 9
-/* */
-
-//EJERCICIO 10
-/* */
+y un objeto “gustos” que contenga al menos dos propiedades (el objeto gustos debe estar dentro del objeto principal).
+ Se deberá imprimir los datos de cada alumno. 
 
 
-
-/**************************************************************************************************************/
-/*let losSimuladores = [
-    {Nombre:"Santos", edad: 34, funcion: "planificación" },
-    {Nombre: "Ravena", edad: 32,funcion: "caracterización"},
-    {Nombre: "Medina", edad: 40, funcion: "investigación"},
-    {Nombre: "Lamponne", edad: 36, funcion: "movilidad"},
+let Estudiantes = [
+    {Nombre :`Victor`,Edad : `18 años`,GéneroMusical : `Pop alternativo`,Mascotas : `8 gatos`, Gustos : [`Menta granizada`, `Naruto`]},
+    {Nombre :`Nahuel`,Edad : `19 años`,GéneroMusical : `Pop alternativo`,Mascotas : `8 gatos`, Gustos : [`Menta granizada`, `Naruto`]},
+    {Nombre :`Franco`,Edad : `22 años`,GéneroMusical : `Pop alternativo`,Mascotas : `8 gatos`, Gustos : [`Menta granizada`, `Naruto`]},
+    {Nombre :`Pablo`,Edad : `22 años`,GéneroMusical : `Pop alternativo`,Mascotas : `8 gatos`, Gustos : [`Menta granizada`, `Naruto`]},
+    {Nombre :`Tamara`,Edad : `21 años`,GéneroMusical : `Pop alternativo`,Mascotas : `8 gatos`, Gustos : [`Menta granizada`, `Naruto`]},
 ]
 
-for(let i= 0; i<losSimuladores.length; i++) {
-    var simulador = losSimuladores[i];
-    document.write ("Nombre: " + "<b>" + simulador.Nombre + "</b>" + ", edad: "+ simulador.edad + ", función: " + simulador.funcion + "<br>")
-} */
+for(let i= 0; i<Estudiantes.length; i++) {
+    var estudiante = Estudiantes[i];
+    document.write ("Nombre: " + "<b>" + estudiante.Nombre + "</b>" + ", edad: "+ estudiante.edad + ", Género Musical: " + estudiante.GéneroMusical + "<br>")
+*/
+
+//EJERCICIO 6
+/*Comentarios: Deberás  imprimir en el html los  comentarios de los usuarios que son ingresados
+ a través de un prompt. Deberán aparecer al menos 5 comentarios. Cada comentario deberá ser impreso junto con la fecha del día de la creación.
+ */
+
+//EJERCICIO 7
+//Películas favoritas III: Escribir un array de objetos de al menos 5 películas que contenga como propiedades las pedidas en el ejercicio.
